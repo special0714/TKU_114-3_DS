@@ -6,11 +6,8 @@ public class SimpleMenu {
         int option = -1;
 
         while (option != 0) {
-            System.out.println("=== Menu ===");
-            System.out.println("1. Say hello");
-            System.out.println("2. Say Java");
-            System.out.println("0. Exit");
-            System.out.print("請輸入選項：");
+            printMenu();
+            
             option = sc.nextInt();
 
             switch (option) {
@@ -29,5 +26,13 @@ public class SimpleMenu {
         }
 
         sc.close();
+    }
+
+    public static void printMenu() {
+        System.out.println("=== Menu ===");
+        System.out.println("1. Say hello");
+        System.out.println("2. Say Java");
+        System.out.println("0. Exit");
+        System.out.print("請輸入選項：");
     }
 }
